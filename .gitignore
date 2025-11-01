@@ -1,1 +1,14 @@
-loom-link.txt
+
+
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+node_modules/
+*.log
+.DS_Store
+/data/elevenlabs.json
+/data/openai.json
+/data/smtp.json

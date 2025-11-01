@@ -1,0 +1,43 @@
+[
+  {
+    "id": "ff3afa7198e4448c826e860951851cf7",
+    "name": "Udaya",
+    "email": "udaygarg@hotmai.com",
+    "table_type": "small",
+    "seats": 2,
+    "slot_iso": "2025-11-01T18:00:00+05:30",
+    "meal_preorder": [],
+    "note": "",
+    "created_at": "2025-11-01T05:10:10.819569+05:30"
+  },
+  {
+    "id": "6a68d4ac0a174410895fc2fb8b929a27",
+    "name": "Arita",
+    "email": "artirani@gmail.com",
+    "table_type": "small",
+    "seats": 2,
+    "slot_iso": "2025-11-01T13:00:00+05:30",
+    "meal_preorder": [
+      "Coffee",
+      "Sandwich"
+    ],
+    "note": "I had coffee and a sandwich",
+    "created_at": "2025-11-01T05:28:53.714320+05:30"
+  },
+  {
+    "id": "32be0eedf9ba40c39feddfbac4701e12",
+    "name": "Alex",
+    "email": "udaygarg@hotmail.com",
+    "table_type": "group",
+    "seats": 5,
+    "slot_iso": "2025-11-01T15:00:00+05:30",
+    "meal_preorder": [
+      "Coffee",
+      "Sandwich",
+      "Pastry"
+    ],
+    "note": "Coffee, Sandwich, Pastry with coke",
+    "created_at": "2025-11-01T05:48:40.048092+05:30",
+    "meet_link": "https://meet.example.com/5ab9460521"
+  }
+]
