@@ -147,7 +147,7 @@ export default function ChatUI(){
         </form>
         <div style={{height:12}} />
         <RecorderButton onTranscribed={onTranscribed} />
-        <div className="rec-label">Voice: STT → LLM → TTS auto-replies</div>
+        <div className="rec-label"></div>
       </div>
 
       {/* Review modal renders only when backend is awaiting confirmation */}

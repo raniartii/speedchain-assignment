@@ -1,7 +1,7 @@
 import base64
 from fastapi import APIRouter, UploadFile, File, HTTPException
 from pydantic import BaseModel
-from backend.services import transcribe_service
+from backend.services import stt_service
 from backend.services import tts_service
 from backend.services.intent_service import interpret_text_and_update_session
 from backend.services.memory_service import memory
@@ -23,7 +23,7 @@ class ConverseOut(BaseModel):
 async def transcribe(file: UploadFile = File(...)):
     try:
         data = await file.read()
-        r = transcribe_service.transcribe_audio_bytes(data, filename_hint=file.filename or "audio.webm")
+        r = stt_service.transcribe_audio_bytes(data, filename_hint=file.filename or "audio.webm")
         if not r.get("ok"):
             raise HTTPException(status_code=400, detail=r.get("error", "transcription_failed"))
         return {"ok": True, "text": r["text"]}
