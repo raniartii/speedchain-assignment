@@ -1,8 +1,3 @@
-Here’s a **developer-style, realistic `README.md`** for your AI Café Receptionist project — written like something you’d actually find in a strong GitHub repo (not AI-fluff). It explains architecture, stack choices, setup, and usage in a concise, technical, human-written tone:
-
----
-
-```markdown
 # ☕ BrewHub Café – AI Receptionist
 
 > Voice-driven café assistant built with **FastAPI**, **React**, and **LLM-powered workflow** that handles real-time conversation, table booking, and email confirmations.
@@ -54,7 +49,7 @@ Data (JSON)
 
 Email API ↔ Backend (for confirmations)
 
-````
+```
 
 > See `/docs/Architecture.png` for the full system diagram.
 
@@ -79,7 +74,7 @@ Email API ↔ Backend (for confirmations)
 
 ### 1. Clone & Setup
 ```bash
-git clone https://github.com/<your-username>/brewhub-ai-receptionist.git
+git clone https://github.com/raniartii/speedchain-assignment.git
 cd brewhub-ai-receptionist/backend
 python -m venv .venv
 source .venv/bin/activate  # or .venv\Scripts\activate on Windows
@@ -173,6 +168,18 @@ frontend/
  │   ├── utils/
  │   └── App.jsx
  └── vite.config.js
+
+
+docs/
+ └── openai.json / elevenlabs.json (keys)
+
+.gitignore
+home_page.png
+Chat_UI.png
+Chat.png
+Booking.png
+README.md
+loom-link.txt
 ```
 
 ---
@@ -193,7 +200,7 @@ frontend/
 
 ```html
 <h2>BrewHub Café – Booking Confirmed</h2>
-<p>Hi Uday,</p>
+<p>Hi Arti,</p>
 <p>Your booking details:</p>
 <ul>
   <li><b>Date:</b> 2025-11-01T18:00:00+05:30</li>
@@ -243,8 +250,8 @@ frontend/
 
 ## 🧑‍💻 Author
 
-**Elspeth** – Software Developer
-🔗 [GitHub](https://github.com/<your-username>) | [LinkedIn](https://linkedin.com/in/<your-profile>)
+**Arti** – ML Engineer
+🔗 [GitHub](https://github.com/raniartii) | [LinkedIn](https://linkedin.com/in/raniarti)
 
 ---
 
@@ -252,10 +259,4 @@ frontend/
 
 MIT License © 2025 BrewHub Café
 
-```
-
 ---
-
-Would you like me to make this `README.md` also **include the architecture PNG** you generated (with an embedded image reference like `![Architecture](docs/Architecture.png)`)?  
-It’ll look professional and presentation-ready on GitHub.
-```
