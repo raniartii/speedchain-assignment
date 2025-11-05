@@ -223,13 +223,13 @@ frontend/
 
 ## Demo
 
-![alt text](<Screenshot at 2025-11-01 14-36-05.png>)
+![alt text](<1.png>)
 ---
-![alt text](<Screenshot at 2025-11-01 14-36-40.png>)
+![alt text](<2.png>)
 ---
-![alt text](<Screenshot at 2025-11-01 14-44-40.png>)
+![alt text](<3.png>)
 ---
-![alt text](<Screenshot at 2025-11-01 14-46-41.png>)
+![alt text](<4.png>)
 ---
 
 ## 📈 Future Work
