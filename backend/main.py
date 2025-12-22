@@ -7,14 +7,6 @@ from backend.routes.session import router as session_router
 
 app = FastAPI(title="BrewHub Café – AI Receptionist", version="1.0.0")
 
-@app.on_event("startup")
-async def warmup():
-    try:
-        from backend.services.stt_service import _get_whisper_model
-        _get_whisper_model()
-    except Exception:
-        pass
-
 
 # CORS – adjust frontend origin if needed
 app.add_middleware(
