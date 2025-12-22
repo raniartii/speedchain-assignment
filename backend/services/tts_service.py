@@ -39,16 +39,27 @@ def _eleven_tts(text: str) -> dict:
         import requests
         headers = {
             "xi-api-key": api_key,
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            "Accept": "audio/mpeg"
         }
         payload = {
             "text": text,
+            "model_id": "eleven_multilingual_v2",
             "voice_settings": {
                 "stability": 0.4,
                 "similarity_boost": 0.75
             }
         }
         resp = requests.post(url, headers=headers, json=payload, timeout=30)
+
+        # 🔍 DEBUG: ElevenLabs response
+        print("=== ElevenLabs TTS DEBUG ===")
+        print("Voice ID:", voice_id)
+        print("Status:", resp.status_code)
+        print("Headers:", dict(resp.headers))
+        print("Response (truncated):", resp.text[:300])
+        print("============================")
+
         if resp.status_code != 200:
             return {"ok": False, "error": f"ElevenLabs TTS failed: {resp.status_code} {resp.text}"}
         audio_bytes = resp.content
@@ -65,7 +76,7 @@ def _gtts_tts(text: str, lang: str = "en") -> dict:
         tts.write_to_fp(mp3_fp)
         mp3_fp.seek(0)
         audio_b64 = base64.b64encode(mp3_fp.read()).decode("utf-8")
-        return {"ok": True, "audio_base64": audio_b64}
+        return {"ok": True, "audio_base64": audio_b64, "provider": "gtts"}
     except Exception as e:
         return {"ok": False, "error": f"gTTS failed: {e}"}
 
@@ -74,6 +85,8 @@ def text_to_speech_base64(text: str, lang: str = "en") -> dict:
     if _eleven_available():
         r = _eleven_tts(text)
         if r.get("ok"):
+            r["provider"] = "elevenlabs"
             return r
         # otherwise fall back to gTTS
     return _gtts_tts(text, lang=lang)
+

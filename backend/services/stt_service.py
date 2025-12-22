@@ -30,6 +30,19 @@ def _openai_client_available():
     except Exception:
         return False
 
+_whisper_model = None
+
+def _get_whisper_model():
+    global _whisper_model
+    if _whisper_model is None:
+        from faster_whisper import WhisperModel
+        _whisper_model = WhisperModel(
+            "small",
+            device="cpu",
+            compute_type="int8"
+        )
+    return _whisper_model
+
 def transcribe_audio_bytes(file_bytes: bytes, filename_hint: str = "audio.webm"):
     """
     Strategy:
@@ -68,8 +81,9 @@ def transcribe_audio_bytes(file_bytes: bytes, filename_hint: str = "audio.webm")
     try:
         from faster_whisper import WhisperModel  # type: ignore
         import tempfile
-        model_size = "small"
-        model = WhisperModel(model_size, device="cpu", compute_type="int8")
+        model = _get_whisper_model()
+        segments, info = model.transcribe(tmp_path, beam_size=5)
+
         with tempfile.NamedTemporaryFile(delete=False, suffix=Path(filename_hint).suffix) as tf:
             tf.write(file_bytes)
             tmp_path = tf.name

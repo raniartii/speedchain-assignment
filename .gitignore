@@ -12,3 +12,5 @@ node_modules/
 /data/elevenlabs.json
 /data/openai.json
 /data/smtp.json
+/backend/Procfile
+/backend/runtime.txt

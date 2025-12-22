@@ -41,153 +41,27 @@
     "meet_link": "https://meet.example.com/5ab9460521"
   },
   {
-    "id": "cbc7c16d30be4a17bea7b1f163db82bf",
-    "name": "Kashik",
-    "email": "udaygarg@hotmail.com",
-    "table_type": "group",
-    "seats": 5,
-    "slot_iso": "2025-11-01T12:00:00+05:30",
-    "meal_preorder": [
-      "Coffee",
-      "Sandwich"
-    ],
-    "note": "",
-    "created_at": "2025-11-01T07:00:13.801654+05:30",
-    "meet_link": "https://meet.example.com/13479f4169"
-  },
-  {
-    "id": "a5c890138d19424f9682398c9b8a6242",
-    "name": "Emma",
-    "email": "elsepeth.com@gmail.com",
+    "id": "50d33184e435457182399fd6c8885d91",
+    "name": "Brielle",
+    "email": "raniarti2002@gmail.com",
     "table_type": "small",
     "seats": 2,
-    "slot_iso": "2025-11-01T10:00:00+05:30",
+    "slot_iso": "2025-12-22T19:00:00+05:30",
     "meal_preorder": [],
     "note": "",
-    "created_at": "2025-11-01T08:23:55.175247+05:30",
-    "meet_link": "https://meet.example.com/7cbfd10ddd"
+    "created_at": "2025-12-22T18:46:31.360814+05:30",
+    "meet_link": "https://meet.example.com/4a9901f617"
   },
   {
-    "id": "bf0f3a332fbf4ff69190777a8c0d3413",
-    "name": "Emma",
-    "email": "elsepeth.com@gmail.com",
+    "id": "6fca4888924248718c631c102944afe5",
+    "name": "Brielle",
+    "email": "raniarti2002@gmail.com",
     "table_type": "small",
     "seats": 2,
-    "slot_iso": "2025-11-01T10:00:00+05:30",
-    "meal_preorder": [],
-    "note": "Hi, Booker Table.",
-    "created_at": "2025-11-01T08:26:33.459243+05:30",
-    "meet_link": "https://meet.example.com/8089599f32"
-  },
-  {
-    "id": "e7969c613db7494c9ad069f58746d5c6",
-    "name": "Aarti",
-    "email": "artir4321@gmail.com",
-    "table_type": "group",
-    "seats": 5,
-    "slot_iso": "2025-11-01T17:00:00+05:30",
+    "slot_iso": "2025-12-22T19:00:00+05:30",
     "meal_preorder": [],
     "note": "",
-    "created_at": "2025-11-01T09:52:59.802934+05:30",
-    "meet_link": "https://meet.example.com/95557c169c"
-  },
-  {
-    "id": "c1a3fa2201af432396beab44462f13bc",
-    "name": "Aarti",
-    "email": "artir4321@gmail.com",
-    "table_type": "small",
-    "seats": 2,
-    "slot_iso": "2025-11-01T17:00:00+05:30",
-    "meal_preorder": [],
-    "note": "edit it to 2nd nov",
-    "created_at": "2025-11-01T10:12:58.749809+05:30",
-    "meet_link": "https://meet.example.com/7f8dff5cd0"
-  },
-  {
-    "id": "84f70646c8124b31a4a4741a1e36c4d7",
-    "name": "Hello",
-    "email": "artir4321@gmail.com",
-    "table_type": "small",
-    "seats": 2,
-    "slot_iso": "2025-11-01T17:00:00+05:30",
-    "meal_preorder": [],
-    "note": "the audio. Hello!",
-    "created_at": "2025-11-01T11:58:17.516269+05:30",
-    "meet_link": "https://meet.example.com/83ae95c943"
-  },
-  {
-    "id": "943db9ff1e89452193940310c76dd8f8",
-    "name": "Aarti",
-    "email": "artir4321@gmail.com",
-    "table_type": "group",
-    "seats": 5,
-    "slot_iso": "2025-11-01T18:00:00+05:30",
-    "meal_preorder": [
-      "Tea"
-    ],
-    "note": "",
-    "created_at": "2025-11-01T12:04:59.125377+05:30",
-    "meet_link": "https://meet.example.com/2fb6ac34b7"
-  },
-  {
-    "id": "7d24b2ec12cf4a9c8623e494b6817ff2",
-    "name": "Aarti",
-    "email": "artir4321@gmail.com",
-    "table_type": "small",
-    "seats": 2,
-    "slot_iso": "0025-11-01T14:00:00+05:30",
-    "meal_preorder": [
-      "Coffee",
-      "Sandwich"
-    ],
-    "note": "",
-    "created_at": "2025-11-01T12:29:29.486576+05:30",
-    "meet_link": "https://meet.example.com/1029d45346"
-  },
-  {
-    "id": "121aa044adaa483abde67b647420fb91",
-    "name": "Aarti",
-    "email": "artir4321@gmail.com",
-    "table_type": "group",
-    "seats": 5,
-    "slot_iso": "2025-11-01T17:00:00+05:30",
-    "meal_preorder": [
-      "Coffee",
-      "Sandwich",
-      "Pastry"
-    ],
-    "note": "Coffee, Sandwich, Pastry",
-    "created_at": "2025-11-01T14:45:53.551774+05:30",
-    "meet_link": "https://meet.example.com/ac776de48f"
-  },
-  {
-    "id": "689b2db255234955949d153b2847e8fd",
-    "name": "Arti",
-    "email": "artir4321@gmail.com",
-    "table_type": "group",
-    "seats": 5,
-    "slot_iso": "2025-12-10T19:00:00+05:30",
-    "meal_preorder": [
-      "Coffee",
-      "Sandwich"
-    ],
-    "note": "Coffee and Sandwich",
-    "created_at": "2025-12-10T17:57:41.716739+05:30",
-    "meet_link": "https://meet.example.com/b5f79ba4e4"
-  },
-  {
-    "id": "2c6c89c2f89b4aed8db8aad8670d365b",
-    "name": "Arti",
-    "email": "artir4321@gmail.com",
-    "table_type": "group",
-    "seats": 5,
-    "slot_iso": "2025-12-10T19:00:00+05:30",
-    "meal_preorder": [
-      "Coffee",
-      "Sandwich"
-    ],
-    "note": "Coffee and Sandwich",
-    "created_at": "2025-12-11T13:07:00.161265+05:30",
-    "meet_link": "https://meet.example.com/b7f95e2409"
+    "created_at": "2025-12-22T19:02:26.578496+05:30",
+    "meet_link": "https://meet.example.com/c03dff3c57"
   }
 ]
